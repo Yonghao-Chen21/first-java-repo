@@ -7,8 +7,9 @@ import org.junit.jupiter.api.Test;
 class FundamentalPrograms_1_Test {
 
 	@Test
-	void test() {
-		assert (true);
+	void addNumbersTest() {
+		FundamentalPrograms_1 obj = new FundamentalPrograms_1();
+		assertEquals(10, obj.addNumbers(5, 5));
 	}
 
 }
