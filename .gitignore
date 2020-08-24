@@ -1,5 +1,7 @@
 HELP.md
 .gradle
+target/
+/target/**
 build/
 bin/
 /bin/**
