@@ -17,7 +17,7 @@ public class FundamentalPrograms_3 {
 		return false;
 	}
 
-	public int fibonacciNumber(int n) {
+	public int nthFibonacciNumber(int n) {
 		// TODO write logic
 		return 0;
 	}
