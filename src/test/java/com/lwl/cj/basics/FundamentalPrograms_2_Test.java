@@ -20,6 +20,7 @@ class FundamentalPrograms_2_Test {
 
 	@Test
 	void biggestOfTwoTest() {
+		// biggest(5,5) biggest(0,0)
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
 		assertEquals(10, obj.biggest(10, 5));
 		assertEquals(10, obj.biggest(10, 0));
@@ -34,6 +35,7 @@ class FundamentalPrograms_2_Test {
 
 	@Test
 	void biggestOfThreeTest() {
+		//biggest(100,100,100)
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
 		assertEquals(30, obj.biggest(10, 15, 30));
 		assertEquals(300, obj.biggest(100, 200, 300));

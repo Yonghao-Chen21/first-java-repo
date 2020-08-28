@@ -39,6 +39,7 @@ class FundamentalPrograms_1_Test {
 
 	@Test
 	void averageTest() {
+		// Test for different numbers like average(17,8,123)
 		FundamentalPrograms_1 obj = new FundamentalPrograms_1();
 		assertEquals(5, obj.average(5, 5, 5), 0.02);
 		assertEquals(-5, obj.average(-5, -5, -5), 0.02);
