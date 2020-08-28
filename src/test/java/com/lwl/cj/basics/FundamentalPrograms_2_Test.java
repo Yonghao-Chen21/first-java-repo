@@ -10,18 +10,39 @@ class FundamentalPrograms_2_Test {
 	void isEven() {
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
 		assertEquals(true, obj.isEven(10));
+		assertEquals(true, obj.isEven(32));
+		assertEquals(true, obj.isEven(-10));
+		assertEquals(true, obj.isEven(0));
+		assertEquals(false, obj.isEven(11));
+		assertEquals(false, obj.isEven(21));
+		assertEquals(false, obj.isEven(61));
 	}
 
 	@Test
 	void biggestOfTwoTest() {
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
+		assertEquals(10, obj.biggest(10, 5));
+		assertEquals(10, obj.biggest(10, 0));
+		assertEquals(280, obj.biggest(0, 280));
+		assertEquals(85, obj.biggest(85, 76));
 		assertEquals(10, obj.biggest(5, 10));
+		assertEquals(20, obj.biggest(-10, 20));
+		assertEquals(10, obj.biggest(10, -20));
+		assertEquals(-10, obj.biggest(-10, -20));
+		assertEquals(-10, obj.biggest(-20, -10));
 	}
 
 	@Test
 	void biggestOfThreeTest() {
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
 		assertEquals(30, obj.biggest(10, 15, 30));
+		assertEquals(300, obj.biggest(100, 200, 300));
+		assertEquals(850, obj.biggest(850, 750, 650));
+		assertEquals(99, obj.biggest(77, 88, 99));
+		assertEquals(-25, obj.biggest(-25, -50, -85));
+		assertEquals(50, obj.biggest(-25, 50, -85));
+		assertEquals(25, obj.biggest(25, -50, -85));
+		assertEquals(50, obj.biggest(19, 50, -85));
 	}
 
 	/*
@@ -34,7 +55,14 @@ class FundamentalPrograms_2_Test {
 	@Test
 	void getDiscountAmountTest() {
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
-		assertEquals(95, obj.getDiscountAmount(100));
+		assertEquals(95, obj.getDiscountAmount(100), 0.02);
+		assertEquals(450, obj.getDiscountAmount(500), 0.02);
+		assertEquals(880, obj.getDiscountAmount(1000), 0.02);
+		assertEquals(748, obj.getDiscountAmount(850), 0.02);
+		assertEquals(90.9000015258789, obj.getDiscountAmount(101), 0.02);
+		assertEquals(440.8800048828125, obj.getDiscountAmount(501), 0.02);
+		assertEquals(850.8499755859375, obj.getDiscountAmount(1001), 0.02);
+		assertEquals(0, obj.getDiscountAmount(0));
 	}
 
 	/* 
