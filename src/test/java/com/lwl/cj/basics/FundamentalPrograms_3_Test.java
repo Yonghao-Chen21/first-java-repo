@@ -19,7 +19,7 @@ class FundamentalPrograms_3_Test {
 	@Test
 	void sumOfDigitsTest() {
 		FundamentalPrograms_3 obj = new FundamentalPrograms_3();
-		assertEquals(15, obj.sumOfDigits(12345), "You must add the numbers");
+		assertEquals(15, obj.sumOfDigits(12345), "You must find sum of digits");
 		assertEquals(1, obj.sumOfDigits(100));
 		assertEquals(2, obj.sumOfDigits(10010));
 		assertEquals(10, obj.sumOfDigits(70102));
