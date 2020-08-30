@@ -23,6 +23,8 @@ class FundamentalPrograms_2_Test {
 		// biggest(5,5) biggest(0,0)
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
 		assertEquals(10, obj.biggest(10, 5));
+		assertEquals(5, obj.biggest(5, 5));
+		assertEquals(0, obj.biggest(0, 0));
 		assertEquals(10, obj.biggest(10, 0));
 		assertEquals(280, obj.biggest(0, 280));
 		assertEquals(85, obj.biggest(85, 76));
@@ -38,7 +40,9 @@ class FundamentalPrograms_2_Test {
 		//biggest(100,100,100)
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
 		assertEquals(30, obj.biggest(10, 15, 30));
+		assertEquals(0, obj.biggest(0, 0, 0));
 		assertEquals(300, obj.biggest(100, 200, 300));
+		assertEquals(100, obj.biggest(100, 100, 100));
 		assertEquals(850, obj.biggest(850, 750, 650));
 		assertEquals(99, obj.biggest(77, 88, 99));
 		assertEquals(-25, obj.biggest(-25, -50, -85));
@@ -89,6 +93,5 @@ class FundamentalPrograms_2_Test {
 		assertEquals(2625, obj.calElectricityBill(120, 501), 0.02);
 		assertEquals(5150, obj.calElectricityBill(145, 1001), 0.02);
 	}
-
 
 }
