@@ -41,16 +41,16 @@ class FundamentalPrograms_1_Test {
 	void averageTest() {
 		// Test for different numbers like average(17,8,123)
 		FundamentalPrograms_1 obj = new FundamentalPrograms_1();
-		assertEquals(5, obj.average(5, 5, 5), 0.02);
-		assertEquals(-5, obj.average(-5, -5, -5), 0.02);
-		assertEquals(-1, obj.average(5, -5, -5), 0.02);
-		assertEquals(-1, obj.average(-5, 5, -5), 0.02);
-		assertEquals(-1, obj.average(-5, -5, 5), 0.02);
-		assertEquals(0, obj.average(0, -5, 5), 0.02);
-		assertEquals(0, obj.average(-5, 0, 5), 0.02);
-		assertEquals(-3, obj.average(-5, -5, 0), 0.02);
-		assertEquals(3, obj.average(5, 0, 5), 0.02);
-		assertEquals(3, obj.average(5, 5, 0), 0.02);
+		assertEquals(20, obj.average(10, 20, 30), 0.02);
+		assertEquals(-22, obj.average(-12, -25, -30), 0.02);
+		assertEquals(-41, obj.average(17, -18, -123), 0.02);
+		assertEquals(13, obj.average(-10, 125, -76), 0.02);
+		assertEquals(-1, obj.average(-18, -65, 78), 0.02);
+		assertEquals(8, obj.average(0, -12, 36), 0.02);
+		assertEquals(-3, obj.average(-84, 0, 73), 0.02);
+		assertEquals(5, obj.average(-36, -19, 72), 0.02);
+		assertEquals(61, obj.average(98, 0, 87), 0.02);
+		assertEquals(27, obj.average(62, 21, 0), 0.02);
 		assertEquals(0, obj.average(0, 0, 0), 0.02);
 
 	}

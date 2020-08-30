@@ -79,7 +79,16 @@ class FundamentalPrograms_2_Test {
 	@Test
 	void calElectricityBillTest() {
 		FundamentalPrograms_2 obj = new FundamentalPrograms_2();
-		assertEquals(80, obj.calElectricityBill(50, 30), 0.02);
+		assertEquals(140, obj.calElectricityBill(50, 30), 0.02);
+		assertEquals(2420, obj.calElectricityBill(620, 180), 0.02);
+		assertEquals(150, obj.calElectricityBill(60, 30), 0.02);
+		assertEquals(350, obj.calElectricityBill(50, 100), 0.02);
+		assertEquals(2700, obj.calElectricityBill(200, 500), 0.02);
+		assertEquals(5320, obj.calElectricityBill(320, 1000), 0.02);
+		assertEquals(403, obj.calElectricityBill(100, 101), 0.02);
+		assertEquals(2625, obj.calElectricityBill(120, 501), 0.02);
+		assertEquals(5150, obj.calElectricityBill(145, 1001), 0.02);
 	}
+
 
 }
