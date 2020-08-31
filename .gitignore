@@ -1,5 +1,6 @@
 HELP.md
 .gradle
+.metadata
 target/
 /target/**
 build/
