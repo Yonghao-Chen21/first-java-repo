@@ -4,9 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Timeout;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class ArraysProgramsTest {
@@ -69,6 +70,7 @@ public class ArraysProgramsTest {
 	}
 	
 	@Test
+	@Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
 	void isSubSetWithValidSubset() {
 		int[] master = {1,2,3,4,5};
 		int[] sub = {2,3,4};
