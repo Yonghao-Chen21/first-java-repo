@@ -154,7 +154,7 @@ public class ArraysProgramsTest {
 	@Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
 	void isSubSetWithValidSubset() {
 		
-		int[] arr1 = {2,4,5,7,10};
+		int[] arr1 = {2,3,4,5,7,10};
 		int[] arr2 = {-2,4,5,7,12};
 		int[] arr3 = {1,2,3,4,5};
 		int[] arr4 = {0,2,10,11,63,57};
@@ -224,15 +224,16 @@ public class ArraysProgramsTest {
 		boolean res8 = obj.isSubSet(arr8, sub8);
 		boolean res9 = obj.isSubSet(arr9, sub9);
 		
-		assertFalse(!res1, "Sub array is  sub set of master array");
-		assertFalse(!res2, "Sub array is  sub set of master array");
-		assertFalse(!res3, "Sub array is  sub set of master array");
-		assertFalse(!res4, "Sub array is  sub set of master array");
-		assertFalse(!res5, "Sub array is  sub set of master array");
-		assertFalse(!res6, "Sub array is  sub set of master array");
-		assertFalse(!res7, "Sub array is  sub set of master array");
-		assertFalse(!res8, "Sub array is  sub set of master array");
-		assertFalse(!res9, "Sub array is  sub set of master array");
+		assertFalse(res1, "Sub array is  sub set of master array");
+		assertFalse(res2, "Sub array is  sub set of master array");
+		assertFalse(res3, "Sub array is  sub set of master array");
+		assertFalse(res4, "Sub array is  sub set of master array");
+		assertFalse(res5, "Sub array is  sub set of master array");
+		assertFalse(res6, "Sub array is  sub set of master array");
+		assertFalse(res7, "Sub array is  sub set of master array");
+		assertFalse(res8, "Sub array is  sub set of master array");
+		assertFalse(
+				res9, "Sub array is  sub set of master array");
 	}
 
 }

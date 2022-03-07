@@ -13,15 +13,20 @@ public class FundamentalPrograms_1 {
 	}
 
 	public float average(int a, int b, int c) {
-		return 0.0f;
+		float avg = (a + b + c)/3.0f;
+		return avg;
 	}
 
 	public String swap(int a, int b) {
+		a = a + b;
+		b = a - b;
+		a = a - b;
 		return a + " and " + b; // don't change this return statement
 
 	}
 
 	public float simpleInterest(float p, float t, float r) {
-		return 0.0f;
+		float interest = (p * t * r) / 100;
+		return interest;
 	}
 }

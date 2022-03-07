@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class FundamentalPrograms_3_Test {
 
 	@Test
-	void addNumbersTest() {
+	void reverseOfNumber() {
 		FundamentalPrograms_3 obj = new FundamentalPrograms_3();
 		assertEquals(54321, obj.reverseOfNumber(12345), "You must reverse the numbers");
 		assertEquals(121, obj.reverseOfNumber(121));
