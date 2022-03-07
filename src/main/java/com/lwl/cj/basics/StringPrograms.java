@@ -53,8 +53,15 @@ public class StringPrograms {
 		}
 		
 		public int countOfVowels(String str) {
+			char[] vowels = {'a','e','i','o','u'};
+			int rs = 0;
+			for ( char ele : vowels) {
+				for (int i=0; i<str.length();i++) {
+					rs += (ele == str.charAt(i))?1:0;
+				}
+			}
 			
-			return 0;
+			return rs;
 		}
 		
 		public int getWordCount(String str) {
